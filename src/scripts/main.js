@@ -17,7 +17,9 @@ promise1
   .then(() => {
     body.insertAdjacentHTML('beforeend', successPhrase);
   })
-  .catch((error) => alert(error));
+  .catch(() => {
+    body.insertAdjacentHTML('beforeend', errorPhrase);
+  });
 
 promise2.catch(() => {
   body.insertAdjacentHTML('beforeend', errorPhrase);
