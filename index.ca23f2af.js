@@ -1,0 +1,2 @@
+var e=document.querySelector(".logo"),n=document.body,r='<div class="message error-message">Promise was rejected!</div>',t=new Promise(function(n,r){e.addEventListener("click",function(){return n()})}),o=new Promise(function(e,n){setTimeout(function(){return n(Error("Fatal error"))},3e3)});t.then(function(){n.insertAdjacentHTML("beforeend",'<div class="message">Promise was resolved!</div>')}).catch(function(){n.insertAdjacentHTML("beforeend",r)}),o.catch(function(){n.insertAdjacentHTML("beforeend",r)});
+//# sourceMappingURL=index.ca23f2af.js.map
